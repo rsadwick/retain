@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "qokijo";
+    src: url("./fonts/Qokijo.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "lakmus";
+  src: url("./fonts/Lakmus.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gasalt-Black";
+  src: url("./fonts/Gasalt-Black.ttf") format("opentype");
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 36px;
+}
+
+.App-header {
+  background-color: #222;
+  padding: 6px 13px;
+  color: white;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+h1.app-title{
+  margin: -4px 0;
+  padding: 0;
+  font-size: 5rem;
+  font-family: "Gasalt-Black";
+}
+
+.module{
+  margin-top: 65px;
+}
+
+.module-shared{
+  margin-top: 25px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.btn-water { 
+  color: #FFFFFF;
+  background-color: #2AA7AD;
+  border-color: #1A9092;
+  height: 50px;
+  line-height: 36px;
+  font-size: 2rem;
+} 
+ 
+.btn-water:hover, 
+.btn-water:focus, 
+.btn-water:active, 
+.btn-water.active, 
+.open .dropdown-toggle.btn-water { 
+  color: #FFFFFF; 
+  background-color: #157072; 
+  border-color: #1A9092; 
+} 
+ 
+.btn-water:active, 
+.btn-water.active, 
+.open .dropdown-toggle.btn-water { 
+  background-image: none; 
+} 
+ 
+.btn-water.disabled, 
+.btn-water[disabled], 
+fieldset[disabled] .btn-water, 
+.btn-water.disabled:hover, 
+.btn-water[disabled]:hover, 
+fieldset[disabled] .btn-water:hover, 
+.btn-water.disabled:focus, 
+.btn-water[disabled]:focus, 
+fieldset[disabled] .btn-water:focus, 
+.btn-water.disabled:active, 
+.btn-water[disabled]:active, 
+fieldset[disabled] .btn-water:active, 
+.btn-water.disabled.active, 
+.btn-water[disabled].active, 
+fieldset[disabled] .btn-water.active { 
+  background-color: #2AA7AD; 
+  border-color: #1A9092; 
+} 
+ 
+.btn-water .badge { 
+  color: #2AA7AD; 
+  background-color: #FFFFFF; 
+}
+
+
+.btn-attention { 
+  color: #FFFFFF; 
+  background-color: #B44238; 
+  border-color: #B44238; 
+  height: 50px;
+  line-height: 36px;
+  font-size: 2rem;
+} 
+ 
+.btn-attention:hover, 
+.btn-attention:focus, 
+.btn-attention:active, 
+.btn-attention.active, 
+.open .dropdown-toggle.btn-attention { 
+  color: #FFFFFF; 
+  background-color: #D63F32; 
+  border-color: #B44238; 
+} 
+ 
+.btn-attention:active, 
+.btn-attention.active, 
+.open .dropdown-toggle.btn-attention { 
+  background-image: none; 
+} 
+ 
+.btn-attention.disabled, 
+.btn-attention[disabled], 
+fieldset[disabled] .btn-attention, 
+.btn-attention.disabled:hover, 
+.btn-attention[disabled]:hover, 
+fieldset[disabled] .btn-attention:hover, 
+.btn-attention.disabled:focus, 
+.btn-attention[disabled]:focus, 
+fieldset[disabled] .btn-attention:focus, 
+.btn-attention.disabled:active, 
+.btn-attention[disabled]:active, 
+fieldset[disabled] .btn-attention:active, 
+.btn-attention.disabled.active, 
+.btn-attention[disabled].active, 
+fieldset[disabled] .btn-attention.active { 
+  background-color: #B44238; 
+  border-color: #B44238; 
+} 
+ 
+.btn-attention .badge { 
+  color: #B44238; 
+  background-color: #FFFFFF; 
+}

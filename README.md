@@ -1,0 +1,1 @@
+Retain app that is developed in React and uses Cordova for ios and android

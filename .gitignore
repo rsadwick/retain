@@ -1,0 +1,5 @@
+node_packages
+idea
+node_modules
+native/node_modules
+.*idea
