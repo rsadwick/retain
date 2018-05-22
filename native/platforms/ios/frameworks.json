@@ -1,5 +1,5 @@
 {
-    "Speech.framework": 1,
     "Security.framework": 1,
-    "SystemConfiguration.framework": 1
+    "SystemConfiguration.framework": 1,
+    "Speech.framework": 1
 }
