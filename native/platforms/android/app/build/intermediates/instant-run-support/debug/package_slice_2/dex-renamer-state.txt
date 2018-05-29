@@ -1,4 +1,4 @@
-#Tue May 29 17:40:31 EDT 2018
-base.0=C\:\\Users\\sadwickr.STPETE\\Documents\\GitHub\\retain\\native\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\3
+#Tue May 29 17:56:10 EDT 2018
+base.0=C\:\\Users\\sadwickr.STPETE\\Documents\\GitHub\\retain\\native\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\22
 renamed.0=classes.dex
-file.0=C\:\\Users\\sadwickr.STPETE\\Documents\\GitHub\\retain\\native\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\3\\classes.dex
+file.0=C\:\\Users\\sadwickr.STPETE\\Documents\\GitHub\\retain\\native\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\22\\classes.dex
