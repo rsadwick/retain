@@ -279,11 +279,8 @@ class App extends Component {
 
         profileModel.token = this.state.token;
         
-        //deal with cordova bullshit
-        
-        if(window.cordova){
-          var request = ItemApi.loginCordova(profileModel);
-          console.log(request);
+          //login with that token
+        ItemApi.login(profileModel).then(request => {  
           profileModel.isLoggedIn = request.data.success;
           profileModel.redirect = request.data.redirect;
 
@@ -297,26 +294,8 @@ class App extends Component {
 
           this.setState({errors : errorModel});
           this.setState({profile : profileModel});
-        }
-        else{
-            //login with that token
-          ItemApi.login(profileModel).then(request => {  
-            profileModel.isLoggedIn = request.data.success;
-            profileModel.redirect = request.data.redirect;
 
-            if(request.data.success){
-              errorModel.isNotConnected = false;
-              errorModel.isNotLoggedIn = false;
-            }
-            else{
-              errorModel.isNotLoggedIn = true;
-            }
-
-            this.setState({errors : errorModel});
-            this.setState({profile : profileModel});
-
-          });
-        }
+        }); 
       }
     });
   }

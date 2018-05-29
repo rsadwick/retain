@@ -204,31 +204,6 @@ export default {
     });
   },
 
-  loginCordova: function(profile){
-    console.log('i am cordova');
-      
-   return window.cordovaHTTP.postJson(
-      this.url + '/prototype/auth/', 
-      {
-        username: profile.username,
-        password: profile.password,
-        csrfmiddlewaretoken: profile.token
-      }, 
-      {
-        'Content-Type': 'application/json', 
-        'X-CSRFToken': profile.token, 
-        'Referer': 'https://3ee.com'
-      }, 
-    
-    function(response) {
-      return response;
-    }, 
-    
-    function(response) {
-        return response;
-    });
-  },
-
   logout: function(){
     return axios.get(this.url + '/prototype/logout')
       .then(response => {
