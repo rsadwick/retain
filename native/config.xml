@@ -25,7 +25,8 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <engine name="ios" spec="~4.5.4" />
     <plugin name="cordova-plugin-speechrecognition" spec="^1.2.0" />
     <plugin name="cordova-plugin-http" spec="^1.2.0" />
+    <engine name="ios" spec="^4.5.4" />
+    <engine name="android" spec="^7.0.0" />
 </widget>

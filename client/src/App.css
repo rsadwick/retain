@@ -1,16 +1,16 @@
 @font-face {
     font-family: "qokijo";
-    src: url("./fonts/Qokijo.ttf") format("opentype");
+    src: url("fonts/Qokijo.ttf") format("opentype");
 }
 
 @font-face {
   font-family: "lakmus";
-  src: url("./fonts/Lakmus.ttf") format("opentype");
+  src: url("fonts/Lakmus.ttf") format("opentype");
 }
 
 @font-face {
   font-family: "Gasalt-Black";
-  src: url("./fonts/Gasalt-Black.ttf") format("opentype");
+  src: url("fonts/Gasalt-Black.ttf") format("opentype");
 }
 
 .App-logo {
