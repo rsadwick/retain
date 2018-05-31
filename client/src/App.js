@@ -289,7 +289,7 @@ class App extends Component {
             errorModel.isNotLoggedIn = false;
           }
           else{
-            errorModel.isNotLoggedIn = true;
+            errorModel.errorOnLogin = true;
           }
 
           this.setState({errors : errorModel});

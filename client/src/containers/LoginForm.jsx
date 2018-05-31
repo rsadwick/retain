@@ -11,7 +11,7 @@ class LoginForm extends Component {
     }
 
     render() {
-        var errorOnLogin = (this.props.errors.isNotLoggedIn) ? <div className="alert alert-danger" role="alert">There was an error logging into your account, please try again.</div> : '';
+        var errorOnLogin = (this.props.errors.errorOnLogin) ? <div className="alert alert-danger" role="alert">There was an error logging into your account, please try again.</div> : '';
         var successfulLoginRedirect = (this.props.model.redirect) ? <div className="alert alert-success" role="alert">You have successfully logged in.  <Link to={"/"}>Start storing your stuff now!</Link></div> : '';
         if(this.props.errors.isNotConnected){
             return <Redirect to='/error' />;
@@ -50,6 +50,8 @@ class LoginForm extends Component {
                     </div>
                 
                     <button type="submit" className="btn btn-water btn-block">Login</button>
+                    <hr/>
+                    <a>Can't log in?</a>
                 </form>
             </div>
         );

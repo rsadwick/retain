@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default {
-  url: 'https://3ee.com',
+  url: '',
   
   setItem: function(item, token) {
     var objectToSend = {
@@ -193,7 +193,7 @@ export default {
     axios.defaults.xsrfCookieName = "csrftoken"
     axios.defaults.xsrfHeaderName = "X-CSRFToken"
 
-    const config = { headers: { 'Content-Type': 'application/json', 'X-CSRFToken': profile.token, 'Referer': 'https://3ee.com' } };
+    const config = { headers: { 'Content-Type': 'application/json', 'X-CSRFToken': profile.token } };
 
     return axios.post(this.url + '/prototype/auth/', JSON.stringify(objectToSend), config)
     .then(function(response) {
@@ -222,7 +222,7 @@ export default {
     axios.defaults.xsrfCookieName = "csrftoken"
     axios.defaults.xsrfHeaderName = "X-CSRFToken"
 
-    const config = { headers: { 'Content-Type': 'application/json', 'X-CSRFToken': profile.token, 'Referer': 'https://3ee.com' } };
+    const config = { headers: { 'Content-Type': 'application/json', 'X-CSRFToken': profile.token } };
 
     axios.post(this.url + '/api/users/', JSON.stringify(objectToSend), config)
       .then(function(response) {

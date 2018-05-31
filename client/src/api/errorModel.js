@@ -3,7 +3,8 @@ export default {
     get: function() {
       return {
           isNotLoggedIn: false,
-          isNotConnected: false
+          isNotConnected: false,
+          errorOnLogin: false
     }
   }
 }
