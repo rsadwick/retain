@@ -72,6 +72,7 @@ class App extends Component {
     this.markItemForDelete = this.markItemForDelete.bind(this);
     this.unMarkItemForDelete = this.unMarkItemForDelete.bind(this);
     this.deleteItemComplete = this.deleteItemComplete.bind(this);
+    this.handleForgotPassword = this.handleForgotPassword.bind(this);
   }
 
   componentDidMount() {    
@@ -457,6 +458,14 @@ class App extends Component {
     return ItemApi.getLocationTypeByName(id, LocationTypeModel.get().types);
   }
 
+  handleForgotPassword(event){
+    event.preventDefault();
+    if(window.cordova){
+      var url = 'https://3ee.com/accounts/password/reset';
+      window.cordova.InAppBrowser.open(url, '_self', 'location=no');
+    }
+  }
+
   render() {
 
     return (
@@ -569,6 +578,7 @@ class App extends Component {
                 csrftoken={this.state.token}
                 errors={this.state.errors}
                 onDevice={this.onDevice}
+                handleForgotPassword={this.handleForgotPassword}
               />
             )}
           />

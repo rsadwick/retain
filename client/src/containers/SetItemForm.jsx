@@ -19,7 +19,7 @@ class SetItemForm extends Component {
     }
 
     componentWillMount(){
-        if(this.props.model.isDeleted){
+        if(this.props.model.isDeleted && this.props.isEdit){
             this.props.onDeleteComplete();
         }
     }
@@ -29,7 +29,7 @@ class SetItemForm extends Component {
             return <Redirect to='/login' />;
         }
 
-        if(this.props.model.isDeleted){
+        if(this.props.model.isDeleted && this.props.isEdit){
             return <Redirect to='/list' />;
         }
 

@@ -60,7 +60,7 @@ class LoginForm extends Component {
                 
                     <button type="submit" className="btn btn-water btn-block">Login</button>
                     <hr/>
-                    <a>Can't log in?</a>
+                    <a onClick={this.props.handleForgotPassword} href="https://3ee.com/accounts/password/reset/">Can't log in?</a>
                 </form>
             </div>
         );

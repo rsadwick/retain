@@ -6,9 +6,9 @@
     density="560dpi"
     format="10"
     plugin-version="3.0.0"
-    timestamp="1527791009645"
+    timestamp="1527801666106"
     token="-1739978235373587044"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
@@ -18,10 +18,10 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1789" />
+        duration="0" />
     <task
         name="verifier"
-        duration="3657" />
+        duration="0" />
 
     <artifact
         location="C:\Users\sadwickr.STPETE\Documents\GitHub\retain\native\platforms\android\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
@@ -62,8 +62,8 @@
 
     <build
         build-mode="FULL"
-        timestamp="1527791009645"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="1527801666106"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\sadwickr.STPETE\Documents\GitHub\retain\native\platforms\android\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />

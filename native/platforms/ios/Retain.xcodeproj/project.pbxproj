@@ -29,6 +29,7 @@
 		D6030235630741A0BC8EDCF5 /* SpeechRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = 283A2DB7FBCE451CBA43BF07 /* SpeechRecognition.m */; };
 		ED7FA5AEE11D489DB3CE48C7 /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24ED459F19E748A286153C66 /* Speech.framework */; };
 		ED6013471A1A432490537504 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5CAD704A3B4BD39B94C84E /* CDVDevice.m */; };
+		48FD545D8AC248C99CDCAD8A /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = D05334E224B84824B12B11D0 /* CDVInAppBrowser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,8 @@
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = Retain/config.xml; sourceTree = "<group>"; };
 		DE5CAD704A3B4BD39B94C84E /* CDVDevice.m */ = {isa = PBXFileReference; name = "CDVDevice.m"; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		9E510D0654FC423288541FF3 /* CDVDevice.h */ = {isa = PBXFileReference; name = "CDVDevice.h"; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D05334E224B84824B12B11D0 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		B1B6FBB3E11A4A66B21EE182 /* CDVInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +246,8 @@
 				7CB5749E842641EEA220D331 /* SpeechRecognition.h */,
 				DE5CAD704A3B4BD39B94C84E /* CDVDevice.m */,
 				9E510D0654FC423288541FF3 /* CDVDevice.h */,
+				D05334E224B84824B12B11D0 /* CDVInAppBrowser.m */,
+				B1B6FBB3E11A4A66B21EE182 /* CDVInAppBrowser.h */,
 			);
 			name = Plugins;
 			path = Retain/Plugins;
@@ -383,6 +388,7 @@
 				AC1F5C226A8347B1B852BA9B /* AFURLSessionManager.m in Sources */,
 				D6030235630741A0BC8EDCF5 /* SpeechRecognition.m in Sources */,
 				ED6013471A1A432490537504 /* CDVDevice.m in Sources */,
+				48FD545D8AC248C99CDCAD8A /* CDVInAppBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

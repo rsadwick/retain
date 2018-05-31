@@ -18,6 +18,9 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.thirdeye.retain"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.thirdeye.retain"
     }
   },
   "dependent_plugins": {

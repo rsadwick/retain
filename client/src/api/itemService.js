@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default {
-  url: '',
+  url: 'https://3ee.com',
   
   setItem: function(item, token) {
     var objectToSend = {
@@ -21,7 +21,7 @@ export default {
     axios.defaults.xsrfCookieName = "csrftoken"
     axios.defaults.xsrfHeaderName = "X-CSRFToken"
 
-    const config = { headers: { 'Content-Type': 'application/json', 'X-CSRFToken': token, 'Referer': 'https://3ee.com' } };
+    const config = { headers: { 'Content-Type': 'application/json', 'X-CSRFToken': token } };
     console.log(objectToSend)
     return axios.post(this.url + '/api/items/', JSON.stringify(objectToSend), config)
       .then(function(response) {
@@ -45,7 +45,7 @@ export default {
     axios.defaults.xsrfCookieName = "csrftoken"
     axios.defaults.xsrfHeaderName = "X-CSRFToken"
 
-    const config = { headers: {'accept': 'application/json', 'content-type': 'multipart/form-data', 'Referer': 'https://3ee.com' } };
+    const config = { headers: {'accept': 'application/json', 'content-type': 'multipart/form-data' } };
 
     axios.post(this.url + '/api/photos/', formData, config)
       .then(function(response) {
