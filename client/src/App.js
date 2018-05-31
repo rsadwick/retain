@@ -287,6 +287,8 @@ class App extends Component {
           if(request.data.success){
             errorModel.isNotConnected = false;
             errorModel.isNotLoggedIn = false;
+            errorModel.errorOnLogin = false;
+
           }
           else{
             errorModel.errorOnLogin = true;

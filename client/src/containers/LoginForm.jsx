@@ -10,9 +10,19 @@ class LoginForm extends Component {
        // this.props.onDevice();
     }
 
-    render() {
-        var errorOnLogin = (this.props.errors.errorOnLogin) ? <div className="alert alert-danger" role="alert">There was an error logging into your account, please try again.</div> : '';
-        var successfulLoginRedirect = (this.props.model.redirect) ? <div className="alert alert-success" role="alert">You have successfully logged in.  <Link to={"/"}>Start storing your stuff now!</Link></div> : '';
+    getSuccessOrErrorMessaging(){
+        var errorOnLogin = <div className="alert alert-danger" role="alert">There was an error logging into your account, please try again.</div>;
+        var successfulLoginRedirect = <div className="alert alert-success" role="alert">You have successfully logged in.  <Link to={"/"}>Start storing your stuff now!</Link></div>;
+        if(this.props.errors.errorOnLogin){
+            return errorOnLogin;
+        }
+
+        if(this.props.model.redirect){
+            return successfulLoginRedirect;
+        }
+    }
+
+    render() {        
         if(this.props.errors.isNotConnected){
             return <Redirect to='/error' />;
         }
@@ -22,8 +32,7 @@ class LoginForm extends Component {
                 
                 <form onSubmit={this.props.onSubmit} className="module">
 
-                {errorOnLogin}
-                {successfulLoginRedirect}
+                {this.getSuccessOrErrorMessaging()}
 
                 <p>This app stores your personal data, we require you to login.</p>
                 <p>If you do not have a 3EE ID, <Link to={"/create-account"}>sign up now!</Link></p>
