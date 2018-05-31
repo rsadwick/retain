@@ -15,6 +15,9 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.3ee.retain"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.3ee.retain"
     }
   },
   "dependent_plugins": {

@@ -188,6 +188,14 @@ module.exports = [
     "merges": [
       "window.plugins.speechRecognition"
     ]
+  },
+  {
+    "id": "cordova-plugin-device.device",
+    "file": "plugins/cordova-plugin-device/www/device.js",
+    "pluginId": "cordova-plugin-device",
+    "clobbers": [
+      "device"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -196,7 +204,8 @@ module.exports.metadata =
   "cordova-plugin-file": "6.0.1",
   "cordova-plugin-http": "1.2.0",
   "cordova-plugin-speechrecognition": "1.1.2",
-  "cordova-plugin-whitelist": "1.3.3"
+  "cordova-plugin-whitelist": "1.3.3",
+  "cordova-plugin-device": "2.0.2"
 };
 // BOTTOM OF METADATA
 });

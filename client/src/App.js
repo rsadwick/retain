@@ -432,6 +432,12 @@ class App extends Component {
 
     if(window.cordova){
       model.isCordova = true;
+      model.platform = window.device.platform;
+
+      if(window.device.platform === 'Android'){
+        model.isAndroid = true;
+      }
+
       window.plugins.speechRecognition.requestPermission(
         function(){
           console.log("requested permission granted");        
@@ -482,6 +488,7 @@ class App extends Component {
                                onClick={this.onVoiceRecordClick}
                                onStopClick={this.onVoiceStopClick}
                                hasVoiceFeatures={this.state.device.hasVoiceFeatures}
+                               isAndroid={this.state.device.isAndroid}
                                isRecording={this.state.device.isRecording}
                                errors={this.state.errors}
                                 />

@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
 		05277A56E2EB44A9B1D044FA /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 320E2CF419B4450487A7AAD7 /* AFNetworkReachabilityManager.m */; };
@@ -29,6 +28,7 @@
 		CF436B70CEBE402AA6C0DDA2 /* CordovaHttpPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = F223B0CB0D4A46E0B54DB3D3 /* CordovaHttpPlugin.m */; };
 		D6030235630741A0BC8EDCF5 /* SpeechRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = 283A2DB7FBCE451CBA43BF07 /* SpeechRecognition.m */; };
 		ED7FA5AEE11D489DB3CE48C7 /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24ED459F19E748A286153C66 /* Speech.framework */; };
+		ED6013471A1A432490537504 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5CAD704A3B4BD39B94C84E /* CDVDevice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +104,8 @@
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F223B0CB0D4A46E0B54DB3D3 /* CordovaHttpPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CordovaHttpPlugin.m; path = "cordova-plugin-http/CordovaHttpPlugin.m"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = Retain/config.xml; sourceTree = "<group>"; };
+		DE5CAD704A3B4BD39B94C84E /* CDVDevice.m */ = {isa = PBXFileReference; name = "CDVDevice.m"; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		9E510D0654FC423288541FF3 /* CDVDevice.h */ = {isa = PBXFileReference; name = "CDVDevice.h"; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +241,8 @@
 				E7639CC6A02B4F0C97E51443 /* AFURLSessionManager.h */,
 				283A2DB7FBCE451CBA43BF07 /* SpeechRecognition.m */,
 				7CB5749E842641EEA220D331 /* SpeechRecognition.h */,
+				DE5CAD704A3B4BD39B94C84E /* CDVDevice.m */,
+				9E510D0654FC423288541FF3 /* CDVDevice.h */,
 			);
 			name = Plugins;
 			path = Retain/Plugins;
@@ -378,6 +382,7 @@
 				1467471C9ECA40DE9ED353A4 /* AFURLResponseSerialization.m in Sources */,
 				AC1F5C226A8347B1B852BA9B /* AFURLSessionManager.m in Sources */,
 				D6030235630741A0BC8EDCF5 /* SpeechRecognition.m in Sources */,
+				ED6013471A1A432490537504 /* CDVDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

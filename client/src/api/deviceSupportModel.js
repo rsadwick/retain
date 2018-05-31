@@ -5,7 +5,8 @@ export default {
           platform: '',
           hasVoiceFeatures: false,
           isRecording: false,  
-          isCordova: false    
+          isCordova: false,
+          isAndroid: false
         };
     }
   };
