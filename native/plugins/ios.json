@@ -21,6 +21,9 @@
     },
     "cordova-plugin-inappbrowser": {
       "PACKAGE_NAME": "com.3ee.retain"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.3ee.retain"
     }
   },
   "dependent_plugins": {
