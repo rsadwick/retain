@@ -8,7 +8,7 @@ function Header(props){
                 <div className="col-xs-2">
                 <Link
                     to={"/"}>
-                   <img src={props.logo} className="App-logo" alt="logo" />
+                   <img src="./img/logo.svg" className="App-logo" alt="logo" />
                 </Link>
 
                 </div>
