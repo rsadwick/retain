@@ -4,6 +4,12 @@ export default {
   url: 'https://3ee.com',
   
   setItem: function(item, token) {
+    
+    var photos = {};
+    if(item.photos){
+      photos.photo_guid = item.photos.photo_guid
+    }
+    
     var objectToSend = {
       title: item.title,
       description: item.description,
@@ -11,9 +17,7 @@ export default {
         id: item.location.id,
         name: item.location.name
       },
-      photos: {
-        photo_guid: item.photos.photo_guid
-      },
+      photos: photos,
 
       csrfmiddlewaretoken: token
     };

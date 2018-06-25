@@ -11,6 +11,7 @@ function SelectLocationType(props) {
             className="form-control"
             name='location_type'
             value={props.selected} 
+            onBlur={props.onChange}
             onChange={props.onChange}>
             {options}
     </select>

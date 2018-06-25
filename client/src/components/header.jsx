@@ -12,8 +12,17 @@ function Header(props){
                 </Link>
 
                 </div>
-                <div className="col-xs-10">
+                <div className="col-xs-8">
                     <h1 className="app-title">Retain</h1>
+                </div>
+
+                 <div className="col-xs-2">
+             
+                <Link
+                    className="glyphicon glyphicon-question-sign app-about"
+                    to={"/about"}>
+                </Link>
+
                 </div>
             </div>
 

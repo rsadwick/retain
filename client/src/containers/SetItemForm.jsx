@@ -62,6 +62,7 @@ class SetItemForm extends Component {
                         onLoadEnd={this.props.onLoadEnd}
                         onImageChange={this.props.onImageChange}
                         onImageUploadComplete={this.props.onImageUploadComplete}
+                        onImageRemoval={this.props.onImageRemoval}
                     />
                     
                 </div>

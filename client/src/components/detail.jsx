@@ -9,17 +9,20 @@ function Detail(props) {
         <div className="container">
             <div className="module">
                 <h1>{props.selectedItem.title}</h1>
-                
+                <hr/>
                 <p>
+               
+               
                 <Link
-                    to={"/list/"}>
-                    Back to List
-                </Link>
-                </p>
-                <p>
-                <Link
+                className="btn btn-info btn-sm"
                     to={"/set-item/" + props.selectedItem.id}>
                     Edit
+                </Link>
+
+                 <Link
+                    className="btn btn-info btn-sm pull-right"
+                    to={"/list/"}>
+                    Back to List
                 </Link>
                 </p>
 

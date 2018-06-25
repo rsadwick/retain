@@ -8,8 +8,8 @@ export default {
         photos: null,
         location: {
           id: 0,
-          name: '',
-          location_type: 0
+          name: 'Aft deck',
+          location_type: '1'
         },
         owner: '',
         id: 0,

@@ -11,6 +11,7 @@ function SelectOptions(props) {
             className="form-control"
             name='name'
             value={props.selected} 
+            onBlur={props.onChange}
             onChange={props.onChange}>
             {options}
     </select>

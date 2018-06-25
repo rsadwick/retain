@@ -19,8 +19,7 @@ import SearchItemsForm from "./containers/SearchItemsForm.jsx";
 import LoginForm from "./containers/LoginForm.jsx";
 import SignUpForm from "./containers/SignUpForm.jsx";
 import Error from "./containers/Error.jsx";
-
-import initReactFastclick from 'react-fastclick';
+import About from "./containers/About.jsx";
 
 import { HashRouter as Router, Route  } from "react-router-dom";
 
@@ -42,7 +41,7 @@ class App extends Component {
       
     };
 
-    initReactFastclick();
+    //initReactFastclick();
 
     this.csrftoken = '';
 
@@ -53,6 +52,7 @@ class App extends Component {
     this.handleInputSetItemChange = this.handleInputSetItemChange.bind(this);
     this.handleInputSetItemSubmit = this.handleInputSetItemSubmit.bind(this);
     this.handleImageChange = this.handleImageChange.bind(this);
+    this.handleImageRemoval = this.handleImageRemoval.bind(this);
     this.getLocations = this.getLocations.bind(this);
     this.handleImageUploadComplete = this.handleImageUploadComplete.bind(this);
     this.handleSearchChange = this.handleSearchChange.bind(this);
@@ -73,6 +73,7 @@ class App extends Component {
     this.unMarkItemForDelete = this.unMarkItemForDelete.bind(this);
     this.deleteItemComplete = this.deleteItemComplete.bind(this);
     this.handleForgotPassword = this.handleForgotPassword.bind(this);
+    this.handleAboutThirdEye = this.handleAboutThirdEye.bind(this);
   }
 
   componentDidMount() {    
@@ -174,6 +175,8 @@ class App extends Component {
     }
 
     model.token = this.state.token;
+    console.log('change model:');
+    console.log(model);
 
     this.setState({ setItemFormModel: model });
   }
@@ -202,8 +205,16 @@ class App extends Component {
       let photos =  {output_url: file, input_url: reader.result};
       model.photos = photos;
       ItemApi.setImage(model, this.state.token, this.handleImageUploadComplete);
+      console.log('on image changfe called');
       this.setState({ setItemFormModel: model });    
     }     
+  }
+
+  handleImageRemoval(){
+    console.log('removing image');
+    let model = this.state.setItemFormModel;
+    model.photos = null;
+    this.setState({ setItemFormModel: model });    
   }
 
   handleInputSetItemSubmit(event) {
@@ -212,6 +223,9 @@ class App extends Component {
     ItemApi.getCsrfServerSide().then(data => {
       this.setState({ token: data.items });
       ItemApi.setItem(this.state.setItemFormModel, this.state.token).then(request => {  
+        console.log('save data');
+        console.log(this.state.setItemFormModel);
+        console.log('end save');
         if(request.items){
           request.items.isSaved = true;
           this.setState({ setItemFormModel: request.items });   
@@ -464,6 +478,20 @@ class App extends Component {
       var url = 'https://3ee.com/accounts/password/reset';
       window.cordova.InAppBrowser.open(url, '_self', 'location=no');
     }
+    else{
+      window.location = event.target;
+    }
+  }
+
+  handleAboutThirdEye(event){
+    event.preventDefault();
+    if(window.cordova){
+      var url = 'https://3ee.com';
+      window.cordova.InAppBrowser.open(url, '_self', 'location=no');
+    }
+    else{
+      window.location = event.target;
+    }
   }
 
   render() {
@@ -531,6 +559,7 @@ class App extends Component {
                 onChange={this.handleInputSetItemChange}
                 onSubmit={this.handleInputSetItemSubmit}
                 onImageChange={this.handleImageChange}
+                onImageRemoval={this.handleImageRemoval}
                 onImageUploadComplete={this.handleImageUploadComplete}
                 csrftoken={this.state.token}
                 onSearchLocationTypeChange={this.handleLocationTypeChange}
@@ -553,6 +582,7 @@ class App extends Component {
                 onChange={this.handleInputSetItemChange}
                 onSubmit={this.handleInputSetItemSubmit}
                 onImageChange={this.handleImageChange}
+                onImageRemoval={this.handleImageRemoval}
                 onImageUploadComplete={this.handleImageUploadComplete}
                 csrftoken={this.state.token}
                 onSearchLocationTypeChange={this.handleLocationTypeChange}
@@ -601,6 +631,17 @@ class App extends Component {
             path="/error/"
             render={() => (
               <Error
+              
+              />
+            )}
+          />
+
+            <Route
+            exact
+            path="/about/"
+            render={() => (
+              <About
+              handleAboutThirdEye={this.handleAboutThirdEye}
               
               />
             )}

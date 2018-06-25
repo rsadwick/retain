@@ -1,17 +1,7 @@
 @font-face {
-    font-family: "qokijo";
-    src: url("fonts/Qokijo.ttf") format("opentype");
-}
-
-@font-face {
-  font-family: "lakmus";
-  src: url("fonts/Lakmus.ttf") format("opentype");
-}
-
-@font-face {
   font-family: "Gasalt-Black";
   src: url("fonts/Gasalt-Black.ttf") format("opentype");
-}
+  }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -25,6 +15,7 @@
   height: 50px;
   width: 100%;
   position: fixed;
+  z-index: 1;
 }
 
 .App-title {
@@ -40,6 +31,24 @@ h1.app-title{
   padding: 0;
   font-size: 5rem;
   font-family: "Gasalt-Black";
+}
+
+.app-about{
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-top: 5px;
+}
+
+.app-about:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+.app-about:visited{
+  color: #fff;
+  text-decoration: none;
 }
 
 .module{
@@ -153,4 +162,13 @@ fieldset[disabled] .btn-attention.active {
 .btn-attention .badge { 
   color: #B44238; 
   background-color: #FFFFFF; 
+}
+
+.image-preview{
+  width: 100%;
+  height: auto;
+}
+
+.input-upload-file{
+  width: 100%;
 }
