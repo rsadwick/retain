@@ -80,8 +80,8 @@ h1.app-title{
 .btn-water.active, 
 .open .dropdown-toggle.btn-water { 
   color: #FFFFFF; 
-  background-color: #157072; 
-  border-color: #1A9092; 
+  background-color: #2AA7AD;
+  border-color: #1A9092;
 } 
  
 .btn-water:active, 
@@ -130,7 +130,7 @@ fieldset[disabled] .btn-water.active {
 .btn-attention.active, 
 .open .dropdown-toggle.btn-attention { 
   color: #FFFFFF; 
-  background-color: #D63F32; 
+  background-color: #B44238; 
   border-color: #B44238; 
 } 
  

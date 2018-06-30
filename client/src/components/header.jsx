@@ -13,7 +13,7 @@ function Header(props){
 
                 </div>
                 <div className="col-xs-8">
-                    <h1 className="app-title">Retain</h1>
+                    <h1 className="app-title">Retainer</h1>
                 </div>
 
                  <div className="col-xs-2">

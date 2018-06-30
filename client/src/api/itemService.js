@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default {
-  url: 'https://3ee.com',
+  url: '',
   
   setItem: function(item, token) {
     
