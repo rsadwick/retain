@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\sadwickr.STPETE\\Documents\\GitHub\\retain\\native\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\sadwickr\\Documents\\github\\retain\\native\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\sadwickr.STPETE\\Documents\\GitHub\\retain\\native\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\Users\\sadwickr\\Documents\\github\\retain\\native\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "4,2,3",
                         "startColumns": "4,4,4",
